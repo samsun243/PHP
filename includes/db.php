@@ -1,0 +1,21 @@
+<?php
+$host = 'localhost';
+$db   = 'utilisateur';
+$user = 'PRIMS-TECH';
+$pass = 'myloveama'; 
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+try {
+     $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+     // In development, it's better to know why it fails
+     die("Erreur de connexion à la base de données : " . $e->getMessage() . "<br>Vérifiez vos identifiants dans <code>includes/db.php</code>");
+}
+?>
