@@ -69,9 +69,10 @@
                                                 <i class="bi bi-pencil-square small"></i> Modifier
                                             </a>
                                             <form action="actions/admin_action.php" method="POST" class="d-inline">
+                                                <input type="hidden" name="action" value="toggle_status">
                                                 <input type="hidden" name="user_id" value="<?= $u['id'] ?>">
                                                 <input type="hidden" name="is_active" value="<?= $u['is_active'] ?>">
-                                                <button type="submit" name="toggle_status" class="btn btn-outline-<?= $u['is_active'] == 1 ? 'warning' : 'success' ?> btn-sm rounded-pill px-3 py-1 border-opacity-25">
+                                                <button type="submit" class="btn btn-outline-<?= $u['is_active'] == 1 ? 'warning' : 'success' ?> btn-sm rounded-pill px-3 py-1 border-opacity-25">
                                                     <i class="bi bi-<?= $u['is_active'] == 1 ? 'slash-circle' : 'play-circle' ?> small"></i> 
                                                     <?= $u['is_active'] == 1 ? 'Désactiver' : 'Réactiver' ?>
                                                 </button>
