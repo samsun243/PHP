@@ -39,6 +39,17 @@ function redirect($url, $type = null, $message = null) {
 }
 
 /**
+ * Check if the current session user is still active in the database.
+ */
+function check_user_status($pdo, $user_id) {
+    if (!$user_id) return false;
+    $stmt = $pdo->prepare("SELECT is_active FROM users WHERE id = ?");
+    $stmt->execute([$user_id]);
+    $user = $stmt->fetch();
+    return $user && (int)$user['is_active'] === 1;
+}
+
+/**
  * Sanitize input.
  */
 function clean($data) {

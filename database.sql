@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS users (
     city VARCHAR(100),
     country VARCHAR(100),
     bio TEXT,
+    is_active TINYINT(1) DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

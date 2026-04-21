@@ -14,6 +14,8 @@ $options = [
 
 try {
      $pdo = new PDO($dsn, $user, $pass, $options);
+     // Run automated migrations to ensure schema is up-to-date
+     require_once 'migrations.php';
 } catch (\PDOException $e) {
      // In development, it's better to know why it fails
      die("Erreur de connexion à la base de données : " . $e->getMessage() . "<br>Vérifiez vos identifiants dans <code>includes/db.php</code>");

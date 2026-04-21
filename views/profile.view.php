@@ -4,12 +4,12 @@
             <div class="d-flex justify-content-between align-items-center mb-5">
                 <div class="d-flex align-items-center gap-3">
                     <div class="icon-box">
-                        <i class="bi bi-person-gear"></i>
+                        <i data-lucide="settings"></i>
                     </div>
                     <h2 class="fw-bold mb-0 gradient-text">Mon Profil Premium</h2>
                 </div>
                 <span class="badge bg-<?= $user['role'] === 'admin' ? 'danger' : 'primary' ?> px-4 py-2 rounded-pill fs-6 shadow-sm">
-                   <i class="bi bi-shield-check me-1"></i> <?= ucfirst($user['role']) ?>
+                   <i data-lucide="shield-check" class="me-1"></i> <?= ucfirst($user['role']) ?>
                 </span>
             </div>
 
@@ -17,33 +17,33 @@
                 <div class="row">
                     <!-- Section Account -->
                     <div class="col-md-12 mb-4">
-                        <h5 class="fw-bold border-bottom pb-2 mb-3 text-primary"><i class="bi bi-person-circle me-2"></i>Compte</h5>
+                        <h5 class="fw-bold border-bottom pb-2 mb-3 text-primary"><i data-lucide="user" class="me-2"></i>Compte</h5>
                     </div>
                     <div class="col-md-6 mb-4">
                         <label class="form-label required">Nom Complet</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <span class="input-group-text"><i data-lucide="user"></i></span>
                             <input type="text" name="full_name" class="form-control" value="<?= htmlspecialchars($user['full_name']) ?>" required>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <label class="form-label required">Nom d'utilisateur</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-at"></i></span>
+                            <span class="input-group-text"><i data-lucide="at-sign"></i></span>
                             <input type="text" name="username" class="form-control" value="<?= htmlspecialchars($user['username']) ?>" required>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <label class="form-label required">Adresse Email</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <span class="input-group-text"><i data-lucide="mail"></i></span>
                             <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($user['email']) ?>" required>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <label class="form-label required">Téléphone</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                            <span class="input-group-text"><i data-lucide="phone"></i></span>
                             <input type="tel" name="phone" class="form-control" value="<?= htmlspecialchars($user['phone']) ?>" required>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     <div class="col-md-12 mb-4">
                         <label class="form-label required">Adresse</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                            <span class="input-group-text"><i data-lucide="map-pin"></i></span>
                             <input type="text" name="address" class="form-control" value="<?= htmlspecialchars($user['address']) ?>" required>
                         </div>
                     </div>
@@ -107,10 +107,10 @@
 
                 <div class="col-12 mt-4 d-flex flex-wrap gap-3">
                     <button type="submit" name="update_profile" class="btn btn-primary px-5 shadow-lg">
-                        <i class="bi bi-save me-2"></i> Enregistrer les modifications
+                        <i data-lucide="save" class="me-2"></i> Enregistrer les modifications
                     </button>
                     <button type="button" class="btn btn-outline-danger px-4 border-0" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                        <i class="bi bi-trash me-2"></i> Supprimer le compte
+                        <i data-lucide="trash-2" class="me-2"></i> Supprimer le compte
                     </button>
                 </div>
             </form>
@@ -125,8 +125,8 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 glass-card">
             <div class="modal-body p-5 text-center">
-                <div class="text-danger mb-4" style="font-size: 4rem;">
-                    <i class="bi bi-exclamation-triangle-fill"></i>
+                <div class="text-danger mb-4">
+                    <i data-lucide="alert-triangle" style="width: 64px; height: 64px;"></i>
                 </div>
                 <h4 class="fw-bold mb-3">Supprimer mon compte ?</h4>
                 <p class="text-muted">Cette action est définitive. Vous perdrez l'accès à toutes vos données instantanément.</p>

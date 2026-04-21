@@ -56,9 +56,15 @@ php -S localhost:8000
 
 ### 4. Accès à l'application
 Ouvrez votre navigateur et allez sur : **http://localhost:8000**
-*(N'oubliez pas d'aller sur `http://localhost:8000/update_db.php` si c'est votre premier lancement pour mettre à jour les tables avec les derniers champs).*
+*(Le système détectera et créera automatiquement les tables ou colonnes manquantes lors de votre première connexion).*
 
 ---
+
+## 🎨 Design & Expérience Utilisateur
+Le projet utilise désormais un thème **"Sky Blue & White"** premium :
+- **Aesthetic** : Couleurs claires (Bleu Ciel et Blanc) pour un look professionnel et aéré.
+- **Iconographie** : Utilise les icônes **Lucide** (styles React modernes) pour une interface haut de gamme.
+- **Réactivité** : Entièrement compatible avec les mobiles et tablettes.
 
 ## 🪟 Lancement sur Windows (Avec XAMPP / WAMP)
 
@@ -91,7 +97,7 @@ Pour Windows, l'approche la plus simple est d'utiliser un environnement tout-en-
 
 ### 5. Accès à l'application
 Ouvrez votre navigateur web et accédez à : **http://localhost/UserDev** (remplacez `UserDev` par le nom de votre dossier).
-*(Comme sous Linux, allez sur `http://localhost/UserDev/update_db.php` la première fois pour migrer les derniers champs de la base).*
+*(La migration des champs se fera automatiquement en tâche de fond lors du premier accès).*
 
 ---
 
