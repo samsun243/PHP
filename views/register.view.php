@@ -5,7 +5,7 @@
                 <div class="icon-box mx-auto">
                     <i data-lucide="user-plus"></i>
                 </div>
-                <h2 class="fw-bold gradient-text">Rejoindre UserDev Premium</h2>
+                <h2 class="fw-bold gradient-text">Rejoindre UserDev</h2>
                 <p class="text-muted">Créez votre compte en quelques secondes.</p>
             </div>
             

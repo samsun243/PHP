@@ -4,9 +4,9 @@
             <div class="d-flex justify-content-between align-items-center mb-5">
                 <div class="d-flex align-items-center gap-3">
                     <div class="icon-box">
-                        <i data-lucide="settings"></i>
+                        <i data-lucide="circle-user"></i>
                     </div>
-                    <h2 class="fw-bold mb-0 gradient-text">Mon Profil Premium</h2>
+                    <h2 class="fw-bold mb-0 gradient-text">Mon Profil</h2>
                 </div>
                 <span class="badge bg-<?= $user['role'] === 'admin' ? 'danger' : 'primary' ?> px-4 py-2 rounded-pill fs-6 shadow-sm">
                    <i data-lucide="shield-check" class="me-1"></i> <?= ucfirst($user['role']) ?>

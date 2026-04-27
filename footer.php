@@ -1,22 +1,8 @@
     </main>
-    <footer class="container py-5 mt-5 border-top">
-        <div class="row gy-4">
-            <div class="col-lg-6 text-center text-lg-start">
-                <a class="navbar-brand d-inline-flex align-items-center mb-3" href="index.php">
-                    <div class="logo-icon me-2" style="width: 32px; height: 32px; font-size: 1rem;">
-                        <i data-lucide="shield-check"></i>
-                    </div>
-                    <span class="fs-5 fw-bold gradient-text">UserDev</span>
-                </a>
-                <p class="text-muted small mb-0">La solution ultime pour la gestion sécurisée de vos utilisateurs. <br>Conçu avec passion pour les développeurs exigeants.</p>
-            </div>
-            <div class="col-lg-6 text-center text-lg-end">
-                <div class="social-links mb-3">
-                    <a href="#" class="btn btn-primary bg-opacity-10 text-primary btn-sm rounded-circle mx-1 border-0 shadow-sm"><i data-lucide="github"></i></a>
-                    <a href="#" class="btn btn-primary bg-opacity-10 text-primary btn-sm rounded-circle mx-1 border-0 shadow-sm"><i data-lucide="twitter"></i></a>
-                    <a href="#" class="btn btn-primary bg-opacity-10 text-primary btn-sm rounded-circle mx-1 border-0 shadow-sm"><i data-lucide="linkedin"></i></a>
-                </div>
-                <p class="text-muted small mb-0">&copy; <?= date('Y') ?> UserDev Premium Services. Tous droits réservés.</p>
+    <footer class="container py-4 mt-5 border-top">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; <?= date('Y') ?> Gestion des Utilisateurs. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

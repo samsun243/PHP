@@ -19,7 +19,7 @@ if (is_logged_in()) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Manager Premium</title>
+    <title>Gestion des Utilisateurs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@ if (is_logged_in()) {
                 <div class="logo-icon me-2">
                     <i data-lucide="shield-check"></i>
                 </div>
-                <span class="fs-4 fw-bold gradient-text">UserDev</span>
+                <span class="fs-4 fw-bold gradient-text">Gestion</span>
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i data-lucide="menu" class="text-primary" style="width: 32px; height: 32px;"></i>
@@ -50,7 +50,7 @@ if (is_logged_in()) {
                     <?php if (is_logged_in()): ?>
                         <li class="nav-item">
                             <a class="nav-link px-3 <?= basename($_SERVER['PHP_SELF']) == 'profile.php' ? 'active' : '' ?>" href="profile.php">
-                                <i data-lucide="user" class="me-1"></i> Mon Profil
+                                <i data-lucide="circle-user" class="me-1"></i> Mon Profil
                             </a>
                         </li>
                         <?php if (is_admin()): ?>
