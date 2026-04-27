@@ -1,6 +1,6 @@
 <div class="row mt-4">
     <div class="col-12 animate-fade-in">
-        <div class="glass-card p-4 p-md-5">
+        <div class="glass-card glass-card-admin p-4 p-md-5">
             <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-4 mb-4 mb-md-5">
                 <div class="d-flex align-items-center gap-3">
                     <div class="icon-box mb-0">
@@ -20,10 +20,10 @@
                 </div>
             </div>
 
-            <div class="rounded-4 border border-primary border-opacity-10 shadow-sm bg-white overflow-hidden">
+            <div class="rounded-4 border border-primary border-opacity-10 shadow-lg bg-white overflow-hidden">
                 <div class="table-responsive">
-                    <table class="table table-hover align-middle mb-0" style="min-width: 800px;">
-                        <thead class="bg-primary bg-opacity-10">
+                    <table class="table table-admin align-middle mb-0" style="min-width: 800px;">
+                        <thead>
                             <tr>
                             <th class="border-0 px-4 py-3">Utilisateur</th>
                             <th class="border-0 py-3">Email</th>
@@ -52,12 +52,12 @@
                                 </td>
                                 <td class="border-0">
                                     <?php if ($u['is_active'] == 1): ?>
-                                        <span class="badge bg-success bg-opacity-15 text-success px-3 py-1 rounded-pill border border-success border-opacity-25">
-                                            <i data-lucide="check-circle" class="me-1"></i> Actif
+                                        <span class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill border border-success border-opacity-20 d-inline-flex align-items-center">
+                                            <span class="status-indicator status-active"></span> Actif
                                         </span>
                                     <?php else: ?>
-                                        <span class="badge bg-primary bg-opacity-10 text-muted px-3 py-1 rounded-pill border border-primary border-opacity-10">
-                                            <i data-lucide="minus-circle" class="me-1"></i> Inactif
+                                        <span class="badge bg-secondary bg-opacity-10 text-muted px-3 py-2 rounded-pill border border-secondary border-opacity-20 d-inline-flex align-items-center">
+                                            <span class="status-indicator status-inactive"></span> Inactif
                                         </span>
                                     <?php endif; ?>
                                 </td>
@@ -79,7 +79,9 @@
                                             </form>
                                         </div>
                                     <?php else: ?>
-                                        <span class="badge bg-primary bg-opacity-10 text-primary fw-normal px-3 py-1 rounded-pill border border-primary border-opacity-20 shadow-sm">Boss</span>
+                                        <span class="badge admin-badge px-4 py-2 rounded-pill">
+                                            <i data-lucide="crown" class="me-1" style="width: 14px; height: 14px;"></i> Boss
+                                        </span>
                                     <?php endif; ?>
                                 </td>
                             </tr>

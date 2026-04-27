@@ -1,6 +1,6 @@
-<?php 
-require_once 'includes/functions.php'; 
-require_once 'includes/db.php'; 
+<?php
+require_once 'includes/functions.php';
+require_once 'includes/db.php';
 
 // Instant security check: If user is logged in, verify they aren't deactivated
 if (is_logged_in()) {
