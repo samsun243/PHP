@@ -1,6 +1,6 @@
 <?php
 // Script de configuration automatique de la base de données
-$host = 'localhost';
+$host = '127.0.0.1';
 $user = 'PRIMS-TECH';
 $pass = 'myloveama'; // Modifiez ceci si vous avez un mot de passe MySQL
 
